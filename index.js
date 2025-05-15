@@ -7,6 +7,10 @@ app.use(express.json());
 
 let ledStatus = 'off'; // In-memory storage for LED status
 
+app.get('/',(req,res)=>{
+  res.send("Home page")
+})
+
 // Get LED status
 app.get('/led-status', (req, res) => {
   res.send(ledStatus);
