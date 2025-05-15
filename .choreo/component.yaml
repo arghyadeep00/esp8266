@@ -1,8 +1,0 @@
-name: led-controller
-projectType: service
-container:
-  ports:
-    - 5000
-exposed: true
-ingress:
-  path: /
